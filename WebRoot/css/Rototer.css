@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* CSS Document */
+body,div{
+	margin:0;
+	padding:0;
+}
+
+.adver{
+	text-align:center;
+	width:450px;
+	height:245px;
+    width:600px;
+	float:left;
+
+}
+.Rotator_bg{
+     width:450px;
+	 height:20px;
+	 padding-left:50px;
+	 margin-left:50px;
+	 border-top:1px solid #666666; 
+	 background-color:#E0E0E0;
+	}
+.number{
+	float:left;
+	width:20px;
+	height:20px;
+	background-color:#9E2E07;
+	color:#FFF;
+	margin-left:12px;
+	cursor:pointer;
+	font-weight:bold;
+	display:block;
+}
+.numberOver{
+	 width:280px;
+	 text-align:center;
+	 font-size:14px;
+	 background-color:#FFFFFF;
+	 color:#8C2806;
+	 display: block;
+	 margin-left:12px;
+	 float:left;
+	}

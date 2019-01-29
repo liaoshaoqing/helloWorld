@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>login.html</title>
+	<meta charset="UTF-8">
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+  <link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+  <link href='http://fonts.useso.com/css?family=Roboto:500,900italic,900,400italic,100,700italic,300,700,500italic,100italic,300italic,400' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.useso.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+ <script type="text/javascript" src="js/jquery-2.1.4.js"></script>  
+  <script type="text/javascript" src="layer/layer.js"></script>
+  </head>
+  
+  <body>
+  <div class="login">
+	
+	<div class="login-top">
+		<h1>LOGIN FORM</h1>
+	
+			<input type="text" value="User Id" name="userid" id="textLoginId" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'User Id';}">
+			<input type="password" value="password" name="userpwd" id="textLoginPwd" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'password';}">
+	   
+	    <div class="forgot">
+	    	<a href="#">forgot Password</a>
+	    	<input id="btn_sub" type="button" onclick="do_login()" value="Login" >
+	    </div>
+	 
+	</div>
+	<div class="login-bottom">
+		<h3>New User &nbsp;<a href="addUser.jsp">Register</a>&nbsp Here</h3>
+	</div>
+</div>	
+<div class="copyright">
+</div>
+<script type="text/javascript">
+		//创建XMLHTTPRequest
+		var xhr;
+		function createXMLHTTPRequest() {
+			try {
+				// Firefox, Opera 8.0+, Safari 
+				xhr = new XMLHttpRequest();
+			} catch (e) {
+				// Internet Explorer 
+				try {
+					xhr = new ActiveXObject("Msxml2.XMLHTTP");
+				} catch (e) {
+					try {
+						xhr = new ActiveXObject("Microsoft.XMLHTTP");
+					} catch (e) {
+						alert("您的浏览器不支持AJAX！");
+					}
+				}
+			}
+		}
+		
+		function do_login(){
+		 //获取用户名和密码
+		 var uname=document.getElementById("textLoginId").value;
+		 var upass=document.getElementById("textLoginPwd").value;
+		 //非空验证
+		 if(uname.trim().length==0){
+		    layer.tips('登录名不能为空！','#textLoginId');
+		 }else if(upass.trim().length==0){
+		     layer.tips('密码不能为空！','#textLoginPwd');
+		 }else {
+		     //Ajax请求
+		     createXMLHTTPRequest();//调用创建XMLHTTPRequest对象的函数
+		    xhr.onreadystatechange=function (){
+		          if(xhr.readyState==4){
+		             if(xhr.status==200){
+		               var data=xhr.responseText;
+		                if(data=="true"){
+		                  location.href="main.html";
+		                }else {
+		                  layer.tips('用户名或密码错误！','#btn_sub');
+		                }
+		             }
+		          }
+		    };
+		    xhr.open("POST","AjaxLogin",true);
+		    xhr.setRequestHeader("Content-Type",
+						"application/x-www-form-urlencoded;");
+				xhr.send("userid=" + uname + "&userpwd=" + upass+"&random"+Math.random());
+		 }
+		}
+		</script>
+  </body>
+</html>

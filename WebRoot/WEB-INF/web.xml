@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>paper</display-name>
+  <welcome-file-list>
+    <welcome-file>login.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.zwx.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UserListServlet</servlet-name>
+    <servlet-class>com.zwx.servlet.UserListServlet</servlet-class>
+  </servlet>
+  
+   <servlet>
+    <servlet-name>deleteServlet</servlet-name>
+    <servlet-class>com.zwx.servlet.DeleteUserServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>EditServlet</servlet-name>
+    <servlet-class>com.zwx.servlet.UserEditServlet</servlet-class>
+  </servlet>
+   
+   <servlet>
+     <servlet-name>addUserServlet</servlet-name>
+     <servlet-class>com.zwx.servlet.addUserServlet</servlet-class>
+   </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ExitServlet</servlet-name>
+    <servlet-class>com.zwx.servlet.ExitServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GlxwListServlet</servlet-name>
+    <servlet-class>com.zwx.servlet.GlxwListServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteXwServlet</servlet-name>
+    <servlet-class>com.zwx.servlet.DeleteXwServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ArticleEditServlet</servlet-name>
+    <servlet-class>com.zwx.servlet.ArticleEditServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>KpzsListServlet</servlet-name>
+    <servlet-class>com.zwx.servlet.KpzsListServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteKpServlet</servlet-name>
+    <servlet-class>com.zwx.servlet.DeleteKpServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>YsbjListServlet</servlet-name>
+    <servlet-class>com.zwx.servlet.YsbjListServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteYsServlet</servlet-name>
+    <servlet-class>com.zwx.servlet.DeleteYsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>QzjyListServlet</servlet-name>
+    <servlet-class>com.zwx.servlet.QzjyListServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteQzServlet</servlet-name>
+    <servlet-class>com.zwx.servlet.DeleteQzServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SpaqListServlet</servlet-name>
+    <servlet-class>com.zwx.servlet.SpaqListServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteSpServlet</servlet-name>
+    <servlet-class>com.zwx.servlet.DeleteSpServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ShowUser</servlet-name>
+    <servlet-class>com.zwx.servlet.ShowUser</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ShowXw</servlet-name>
+    <servlet-class>com.zwx.servlet.ShowXw</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ShowKp</servlet-name>
+    <servlet-class>com.zwx.servlet.ShowKp</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ShowYs</servlet-name>
+    <servlet-class>com.zwx.servlet.ShowYs</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ShowQz</servlet-name>
+    <servlet-class>com.zwx.servlet.ShowQz</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ShowSp</servlet-name>
+    <servlet-class>com.zwx.servlet.ShowSp</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AjaxLogin</servlet-name>
+    <servlet-class>com.zwx.servlet.AjaxLogin</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <servlet-mapping>
+     <servlet-name>LoginServlet</servlet-name>
+     <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>UserListServlet</servlet-name>
+     <url-pattern>/UserListServlet</url-pattern>
+  </servlet-mapping>
+ 
+  <servlet-mapping>
+    <servlet-name>deleteServlet</servlet-name>
+    <url-pattern>/deleteServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+     <servlet-name>EditServlet</servlet-name>
+     <url-pattern>/UserEditServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>addUserServlet</servlet-name>
+    <url-pattern>/addUserServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ExitServlet</servlet-name>
+    <url-pattern>/ExitServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GlxwListServlet</servlet-name>
+    <url-pattern>/GlxwListServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteXwServlet</servlet-name>
+    <url-pattern>/DeleteXwServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ArticleEditServlet</servlet-name>
+    <url-pattern>/ArticleEditServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>KpzsListServlet</servlet-name>
+    <url-pattern>/KpzsListServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteKpServlet</servlet-name>
+    <url-pattern>/DeleteKpServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>YsbjListServlet</servlet-name>
+    <url-pattern>/YsbjListServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteYsServlet</servlet-name>
+    <url-pattern>/DeleteYsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>QzjyListServlet</servlet-name>
+    <url-pattern>/QzjyListServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteQzServlet</servlet-name>
+    <url-pattern>/DeleteQzServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SpaqListServlet</servlet-name>
+    <url-pattern>/SpaqListServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteSpServlet</servlet-name>
+    <url-pattern>/DeleteSpServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowUser</servlet-name>
+    <url-pattern>/ShowUser</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowXw</servlet-name>
+    <url-pattern>/ShowXw</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowKp</servlet-name>
+    <url-pattern>/ShowKp</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowYs</servlet-name>
+    <url-pattern>/ShowYs</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowQz</servlet-name>
+    <url-pattern>/ShowQz</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowSp</servlet-name>
+    <url-pattern>/ShowSp</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AjaxLogin</servlet-name>
+    <url-pattern>/AjaxLogin</url-pattern>
+  </servlet-mapping>
+</web-app>

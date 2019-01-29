@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	margin:0;
+	padding:0;
+	font-size:12px;
+	line-height:20px;
+	color:#333;
+}
+div{
+	margin:0;
+	padding:0;
+}
+.domes{
+	width:300px;
+	height:280px;
+	border:1px solid #666666;
+	float:right;
+	overflow:hidden;
+	margin-right:80px;
+}
+.dome_top{
+ width:310px;
+ height:28px;
+ background-color:#FFF;
+ color:#810B07;
+ font-size:14px;
+ text-indent:1em;
+  font-weight:bold;
+  line-height:30px;
+}
+#dome{
+	overflow:hidden;
+	height:280px;
+	padding:5px;
+	}
+#dome img{
+	width:100px;
+	margin-right:5px;	
+}
+.title{
+	font-size:14px;
+	color:#0051A2;
+	font-weight:bold;
+}
+.price{
+	font-size:18px;
+	font-weight:bold;
+	color:#DF9100;
+	line-height:35px;
+}
+	
